@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator Using JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="">
+</head>
+
+<body>
+    <div class="body">
+        <div class="calculator">
+            <div class="display_area">
+                <input type="text" id="display">
+                <button onclick="clearDisplay()" id="operators">C</button>
+            </div>
+            <div class="keys">
+                <button onclick="appendToDisplay('7')" onkeydown="disp_function(event)">7</button>
+                <button onclick="appendToDisplay('8')" onkeydown="disp_function(event)">8</button>
+                <button onclick="appendToDisplay('9')" onkeydown="disp_function(event)">9</button>
+                <button onclick="appendToDisplay('*')" onkeydown="disp_function(event)" id="operators">*</button>
+                <button onclick="appendToDisplay('4')" onkeydown="disp_function(event)">4</button>
+                <button onclick="appendToDisplay('5')" onkeydown="disp_function(event)">5</button>
+                <button onclick="appendToDisplay('6')" onkeydown="disp_function(event)">6</button>
+                <button onclick="appendToDisplay('-')" onkeydown="disp_function(event)" id="operators">-</button>
+                <button onclick="appendToDisplay('1')" onkeydown="disp_function(event)">1</button>
+                <button onclick="appendToDisplay('2')" onkeydown="disp_function(event)">2</button>
+                <button onclick="appendToDisplay('3')" onkeydown="disp_function(event)">3</button>
+                <button onclick="appendToDisplay('+')" onkeydown="disp_function(event)" id="operators">+</button>
+                <button onclick="appendToDisplay('0')" onkeydown="disp_function(event)">0</button>
+                <button onclick="appendToDisplay('.')" onkeydown="disp_function(event)">.</button>
+                <button onclick="calculate()" id="operators">=</button>
+                <button onclick="appendToDisplay('/')" onkeydown="disp_function(event)" id="operators">/</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+body {
+
+    background: url('girl-river-sunset-bird-anime-art.jpg');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: block;
+    margin: 5vh;
+    padding: 5vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    backdrop-filter: blur(20pt);
+}
+
+#display {
+    padding: 15px 10px 15px 10px;
+    font-size: 2rem;
+    background-color: transparent;
+    border-radius: 20px;
+    color: white;
+    text-align: right;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 100px 100px;
+    font-size: 2rem;
+    background-color: transparent;
+    color: white;
+}
+
+button:hover {
+    transition-duration: 0.5s;
+    background-color: rgba(249, 197, 197, 0.758);
+}
+
+#operators {
+    background-color: rgb(220, 118, 3);
+    color: white;
+}
+
+#operators:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(255, 139, 6);
+    color: white;
+}
